@@ -1,0 +1,161 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.aboutHeader {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: var(--color-surface);
+}
+
+.storySection {
+  padding: 5rem 0;
+  background-color: var(--color-background);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 3px;
+}
+
+.textContent p {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+}
+
+.imageGallery {
+  width: 100%;
+}
+
+.imageMain {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hover);
+}
+
+.valuesSection {
+  padding: 4rem 0;
+  background-color: var(--color-surface);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--color-background);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.valueCard h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.valueCard p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+.locationSection {
+  padding: 5rem 0;
+  background-color: var(--color-background);
+}
+
+.locationContent {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.locationContent .subtitle::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.addressBox {
+  background-color: var(--color-surface);
+  padding: 3rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-hover);
+  margin-top: 2rem;
+}
+
+.addressLine {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.hours {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(92, 64, 51, 0.1);
+}
+
+.hours h4 {
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.hours p {
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

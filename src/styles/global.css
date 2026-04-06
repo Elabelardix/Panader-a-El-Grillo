@@ -1,0 +1,62 @@
+:root {
+  --color-primary: #5c4033;
+  --color-secondary: #8b5a2b;
+  --color-accent: #d2a679;
+  --color-background: #fdfbf7;
+  --color-surface: #ffffff;
+  --color-text: #33241c;
+  --color-text-light: #6e5c53;
+  
+  --shadow-soft: 0 4px 20px rgba(92, 64, 51, 0.08);
+  --shadow-hover: 0 8px 30px rgba(92, 64, 51, 0.15);
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "promo-cafe-1",
+    "name": "Promo Café y Facturas",
+    "price": 3000,
+    "description": "Café en grano italiano recién molido de alta calidad con variedad de infusiones. La promo incluye 2 unidades de tortas o facturas a elección.",
+    "category": "Promo Café",
+    "image": "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=600",
+    "highlight": true
+  },
+  {
+    "id": "factura-1",
+    "name": "Facturas Variadas",
+    "price": 700,
+    "description": "Facturas de alta calidad, variedad de pastelera, medialunas, sacramentos y dulce de leche.",
+    "category": "Facturas",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    "id": "torta-1",
+    "name": "Torta Casera",
+    "price": 500,
+    "description": "Tortas de alta calidad, variedad de hojaldre, tipo caseras (cordobesas), raspadas.",
+    "category": "Tortas",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    "id": "tarta-1",
+    "name": "Tarta Cabsha",
+    "price": 9000,
+    "description": "Tartas variadas como Cabsha, pasta frola de membrillo o frutos rojos, coco con dulce de leche y ricota.",
+    "category": "Tartas",
+    "image": "https://images.unsplash.com/photo-1519915028121-7d3463d20d13?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    "id": "macita-1",
+    "name": "100g Macitas Finas",
+    "price": 2000,
+    "description": "Masas finas de alta calidad, rellenas o simples, con dulce de leche y variedad de galletas.",
+    "category": "Macitas",
+    "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&q=80&w=600"
+  },
+  {
+    "id": "alfajor-1",
+    "name": "Alfajores Surtidos",
+    "price": 1000,
+    "description": "Alfajores de miel, maicena y chocolate. También productos hojaldrados como cañones de dulce de leche, palmerones y lenguas.",
+    "category": "Alfajores",
+    "image": "https://images.unsplash.com/photo-1582293041079-7814c2f12063?auto=format&fit=crop&q=80&w=600"
+  }
+]

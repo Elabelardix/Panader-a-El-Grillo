@@ -1,0 +1,139 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.heroSection {
+  height: 80vh;
+  min-height: 500px;
+  background-image: url('https://images.unsplash.com/photo-1555507036-ab1d40721eb6?auto=format&fit=crop&q=80&w=1920');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(46, 32, 25, 0.8) 0%, rgba(46, 32, 25, 0.4) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.title {
+  color: var(--color-surface);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slogan {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: var(--color-surface);
+  padding: 1rem 2.5rem;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(210, 166, 121, 0.4);
+}
+
+.ctaButton:hover {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.featuredSection {
+  padding: 5rem 0;
+  background-color: var(--color-background);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  border-radius: 3px;
+}
+
+.featuredWrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  transform: scale(1.05);
+}
+
+.latestSection {
+  padding: 5rem 0;
+  background-color: var(--color-surface);
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.centerAction {
+  text-align: center;
+}
+
+.secondaryButton {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 60vh;
+  }
+}
